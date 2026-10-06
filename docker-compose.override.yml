@@ -1,0 +1,10 @@
+services:
+  langfuse-web:
+    networks:
+      - default
+      - shared-observability
+
+networks:
+  shared-observability:
+    external: true
+    name: shared-observability
